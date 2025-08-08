@@ -745,7 +745,7 @@ with st.container(border=True):
     with st.expander(f"### İlçe Bazında Vadesel Tehlike Skor Dağılımı Haritaları ({hazard})", expanded=False):
         with st.spinner(f"{term} haritası yükleniyor..."):
             st.write(f"#### {term}")
-            st.components.v1.html(m._repr_html_(), height=500, width =1700, scrolling=False)
+            st.components.v1.html(m._repr_html_(), height=500, width =1800, scrolling=False)
             st.info("INFO - Kayıtlı varlıkların hani ilçeye düştükleri ve bu ilçeye düşen varlıkların seçili risk bazında ortalama değerlerini ısı haritasıyla gösterir. ")
 
     if hazard in ("Orman Yangını", "Sel", "Fırtına"):
@@ -949,4 +949,5 @@ with st.container(border=True):
         st.write(raw_scores_copy)
 
 # ==================== ======================= ====================
+
 
