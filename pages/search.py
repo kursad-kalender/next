@@ -71,7 +71,7 @@ if "hazard_df" in st.session_state:
             with colTitle:
                 st.write("### Asset ID Arama - Tüm Tehlikeler")
             with colButton:
-                st.page_link("final.py", label = "Anasayfaya Geri Dön")
+                st.page_link("final_streamlit.py", label = "Anasayfaya Geri Dön")
             asset_ids = sorted(df_final.index.get_level_values("Asset ID").unique().tolist())
 
             keyword = st.text_input("Asset ID girin.").strip()
@@ -173,4 +173,5 @@ if "hazard_df" in st.session_state:
         st.warning("No data after merging hazard scenarios.")
 else:
     st.warning("No data in session state.")
+
 
