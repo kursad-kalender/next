@@ -745,7 +745,7 @@ with st.container(border=True):
     with st.expander(f"### İlçe Bazında Vadesel Tehlike Skor Dağılımı Haritaları ({hazard})", expanded=False):
         with st.spinner(f"{term} haritası yükleniyor..."):
             st.write(f"#### {term}")
-            st.components.v1.html(m._repr_html_(), height=500, width =1500, scrolling=False)
+            st.components.v1.html(m._repr_html_(), height=500, width =1700, scrolling=False)
             st.info("INFO - Kayıtlı varlıkların hani ilçeye düştükleri ve bu ilçeye düşen varlıkların seçili risk bazında ortalama değerlerini ısı haritasıyla gösterir. ")
 
     if hazard in ("Orman Yangını", "Sel", "Fırtına"):
@@ -765,7 +765,7 @@ with st.container(border=True):
             flag_col = f"{term} {flag_type} Flag"
             risk_map = prepare_flag_based_map(term, flag_col, joined_scenario)
             if risk_map:
-                st.components.v1.html(risk_map._repr_html_(), height=500, width = 1500, scrolling=False)
+                st.components.v1.html(risk_map._repr_html_(), height=500, width = 1800, scrolling=False)
                 st.info("INFO - İlçelere düşen varlıkların hangilerinin akut - kronik eşikleri geçtiğini belirler ve eşiği geçen varlıkların ID'sini, toplam eşik geçen varlık sayısıyla birlikte gösterir.")
             else:
                 st.warning("Seçilen koşullar için riskli varlık haritası oluşturulamadı.")
@@ -949,3 +949,4 @@ with st.container(border=True):
         st.write(raw_scores_copy)
 
 # ==================== ======================= ====================
+
