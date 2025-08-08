@@ -1,0 +1,16 @@
+streamlit
+pandas
+numpy
+matplotlib==3.8.4
+plotly
+httpx
+nest_asyncio
+streamlit-aggrid
+streamlit-extras
+geopandas>=0.13
+folium==0.14.0
+branca==0.6.0
+fiona>=1.9
+pyproj>=3.6
+shapely>=2
+mapclassify>=2.6
