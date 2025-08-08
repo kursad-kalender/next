@@ -946,8 +946,9 @@ with st.container(border=True):
 
     with st.expander(f"#### HxV = Risk (Senaryo Bazlı Tüm Assetler için)", expanded=False):
         #st.write(pivoted_scores)
-        st.write(raw_scores_copy)
-
+        #st.write(raw_scores_copy)
+        st.write("In Progress...")
 # ==================== ======================= ====================
+
 
 
